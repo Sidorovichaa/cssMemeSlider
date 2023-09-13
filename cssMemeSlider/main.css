@@ -2,13 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap");
 
 #slider {
-  width: 75%;
-  max-width: 100%;
+  /* width: 75%; */
+  max-width: 65%;
   text-align: center;
   color: #2e0101;
   font-size: 16px;
   margin: 2rem auto;
-  
 }
 
 .slider-wrapper {
@@ -151,7 +150,11 @@ img {
 
 /* Mobile adaptation */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 1000px) {
+
+  #slider {
+    max-width: 85%;
+  }
 
   p {
     font-size: 14px;
@@ -161,5 +164,12 @@ img {
     display: flex;
     flex-direction: column;
     margin: 1.1rem 0 2rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #slider {
+    max-width: 95%;
   }
 }
