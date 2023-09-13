@@ -1,47 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat Meme Slider</title>
+    <title>Medieval Meme Slider</title>
     <link rel="stylesheet" href="./main.css">
 
 </head>
+
 <body>
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <div id="slide-1" >
-                    <img src="./img/Slide1.jpg" alt="Simon's cat">
-                    <p class="text">- Вы зарплатов выдаете? - Нет, просто показываю. - Красивое....</p>
-                </div>
-                <div id="slide-2" >
-                    <img src="./img/Slide2.jpg" alt="Simon's cat">
-                    <p class="text">- Рыбов, вылезай... Красивое....</p>
-                </div>
-                <div id="slide-3" >
-                    <img src="./img/Slide3.jpg" alt="Simon's cat">
-                    <p class="text">- Наташа, вставай! - Они продали всех рыбов!!! - Бессердечное...</p>
-                </div>
-                <div id="slide-4" >
-                    <img src="./img/Slide4.jpg" alt="Simon's cat">
-                    <p class="text">- Тьфу, блин, костлявое...</p>
-                </div>
 
+    <section id="slider">
+
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <img src="./img/Slide1.jpg" alt="image 1">
+                            <p>- Вы зарплатов выдаете? - Нет, просто показываю. - Красивое....</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <img src="./img/Slide2.jpg" alt="image 2">
+                            <p>- Рыбов, вылезай... Красивое....</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <img src="./img/Slide3.jpg" alt="image 3">
+                            <p>- Наташа, вставай! - Они продали всех рыбов!!! - Бессердечное...</p>
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <img src="./img/Slide4.jpg" alt="image 4">
+                            <p>- Тьфу, блин, костлявое...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="slider-nav">
-                <a class="slider-ref" href="#slide-1"></a>
-                <a class="slider-ref" href="#slide-2"></a>
-                <a class="slider-ref" href="#slide-3"></a>
-                <a class="slider-ref" href="#slide-4"></a>
-            </div>
-
-
+            
         </div>
+
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        
     </section>
-    
+
+
+
 </body>
+
 </html>
