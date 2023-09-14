@@ -3,7 +3,7 @@
 
 #slider {
   /* width: 75%; */
-  max-width: 65%;
+  max-width: 50%;
   text-align: center;
   color: #2e0101;
   font-size: 16px;
@@ -149,6 +149,13 @@ img {
 }
 
 /* Mobile adaptation */
+
+@media screen and (max-width: 1300px) {
+
+  #slider {
+    max-width: 75%;
+  }
+}
 
 @media screen and (max-width: 1000px) {
 
